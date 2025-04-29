@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    height: 100dvh;
+    margin: 0px;
+}
+
+body :first-child {
+    width: 60vh;
+}
+
+#left-background {
+    background-image: url("../images/daniel-shapiro-U-z4xo7GR14-unsplash.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center; 
+}
