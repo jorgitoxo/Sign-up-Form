@@ -1,16 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     height: 100dvh;
     margin: 0px;
-}
 
-body :first-child {
-    width: 60vh;
+    font: 1em / 1.6 Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 #left-background {
-    background-image: url("../images/daniel-shapiro-U-z4xo7GR14-unsplash.jpg");
+    width: 30vw;
+    background-image: url("../Images/daniel-shapiro-U-z4xo7GR14-unsplash.jpg");
     background-repeat:no-repeat;
     background-size: cover;
-    background-position:center; 
+    background-position:center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    text-align: center;
+    color:rgb(245, 245, 245);
+
+    div:last-of-type {
+        margin-bottom: 1vh;
+    }
+}
+
+#left-background div:first-of-type {
+    font-family: "ComicRunes", system-ui;
+    font-size: 8rem;
+    
+    width: 100%;
+    margin-top: 20vh;
+    background-color: hsla(0, 0%, 9%, 0.301);
+    padding-left: 100px;
+
+    
+    /* filter: invert(0.9); */
+    /* mix-blend-mode: color-burn; */
+}
+
+#left-background div:first-of-type > span {
+    position: relative;
+}
+
+#left-background div:first-of-type > span::before {
+    position: absolute;
+    content: "";
+    background: url(../Images/odin-lined.png);
+    width: 380px;
+    height: 508px;
+
+    scale: 0.3;
+    right: 80px;
+    bottom: -180px;
+}
+
+@font-face {
+    font-family: 'ComicRunes';
+    src: url('../Fonts/ComicRunes.woff2') format('woff2'),
+        url('../Fonts/ComicRunes.woff') format('woff');
 }
