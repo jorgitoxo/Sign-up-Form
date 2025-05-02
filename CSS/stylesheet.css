@@ -7,7 +7,7 @@ body {
     display: flex;
     height: 100dvh;
 
-    font: 1em / 1.6 Helvetica Neue, Helvetica, Arial, sans-serif;
+    font: 1em / 1.6 sans-serif;;
 }
 
 #left-panel {
@@ -76,7 +76,7 @@ form > p {
 
 #right-panel div:first-of-type > p + p{
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 ul {
@@ -104,7 +104,8 @@ label {
     letter-spacing: 0.1em;
 }
 
-input {
+input,
+button {
     font-family: inherit;
     font-size: 100%;
     padding: 4px 8px;
@@ -112,12 +113,37 @@ input {
 
     appearance: none;
     -webkit-appearance: none;
+}
 
-    min-width: 80%;
+input {
+    min-width: 75%;
+    border: 2px solid #f1f1f1;
+    border-radius: 4px;
+}
+
+input:focus,
+input:focus-visible {
+    border: none;
+    outline: none;
+    border: 2px solid dodgerblue;
+    box-shadow: 0px 3px 3px hsl(0, 0%, 70%);
+}
+
+input:hover,
+input:focus-within {
+    background-color: rgb(228, 228, 228);
+}
+
+input:valid[type="password"] {
+    border: 2px solid seagreen;
+}
+
+input:invalid {
+    border: 2px solid tomato;
 }
 
 form {
-    border-bottom: solid 3px hsl(0, 0%, 70%);
+    box-shadow: 2px 3px 3px hsl(0, 0%, 70%);
     margin-bottom: 20px;
 }
 
