@@ -6,12 +6,14 @@
 body {
     display: flex;
     height: 100dvh;
+    background-color: #f1f1f1;
 
-    font: 1em / 1.6 sans-serif;;
+    font: 1em / 1.6 sans-serif;
+    
 }
 
 #left-panel {
-    width: 30vw;
+    width: 40vw;
     background-image: url("../Images/daniel-shapiro-U-z4xo7GR14-unsplash.jpg");
     background-repeat:no-repeat;
     background-size: cover;
@@ -29,23 +31,23 @@ body {
     }
 }
 
-#left-panel div:first-of-type {
+#left-panel > div:first-of-type {
     font-family: "ComicRunes", system-ui;
     font-size: 8rem;
     
     width: 100%;
-    margin-top: 20vh;
+    margin-top: 18vh;
     background-color: hsla(0, 0%, 9%, 0.301);
     padding-left: 100px;
     /* filter: invert(0.9); */
     /* mix-blend-mode: color-burn; */
 }
 
-#left-panel div:first-of-type > span {
+#left-panel > div:first-of-type > span {
     position: relative;
 }
 
-#left-panel div:first-of-type > span::before {
+#left-panel > div:first-of-type > span::before {
     position: absolute;
     content: "";
     background: url(../Images/odin-lined.png);
@@ -58,25 +60,25 @@ body {
 }
 
 #right-panel {
-    width: 70vw;
+    width: 60vw;
     padding-top: 120px;
 }
 
 #right-panel > div,
 #right-panel > form {
-    padding-left: 30px;
+    padding-left: 60px;
 }
 
-#right-panel div:first-of-type > p,
+#right-panel > div:first-of-type > p,
 form > p {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-#right-panel div:first-of-type > p + p{
+#right-panel > div:first-of-type > p + p{
     margin-top: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
 }
 
 ul {
@@ -144,7 +146,53 @@ input:invalid {
 
 form {
     box-shadow: 2px 3px 3px hsl(0, 0%, 70%);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+
+    margin-bottom: 40px;
+
+    background-color: #424b50;
+    color: #e0e0e0;
+    
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 268px;
+    height: 56px;
+}
+
+button:hover {
+    background-color:#B9D9EB ;
+    color: #353333;
+}
+
+button:active {
+    background-color:#9db8c7 ;
+}
+
+a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+#right-panel a:last-of-type {
+    text-decoration: none;
+    color: #424b50;
+    font-weight: 600;
+}
+
+#right-panel a:last-of-type:hover{
+    text-decoration: underline;
+}
+
+form {
+    background-color: #fafafa;
 }
 
 @font-face {

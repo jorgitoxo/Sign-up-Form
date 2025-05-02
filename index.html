@@ -14,7 +14,7 @@
             <span></span>
         </div>
         <div>
-            Photo by <a href="https://unsplash.com/@dshap">Daniel Shapiro </a> on <a href="https://unsplash.com/">Unsplash</a>
+            Photo by <a href="https://unsplash.com/@dshap">Daniel Shapiro</a> on <a href="https://unsplash.com/">Unsplash</a>
         </div>
     </div>
 
@@ -57,7 +57,12 @@
                 </li>
                 <li>
                     <label for="pass">PASSWORD</label>
-                    <input type="password" name="pass" id="pass" required>
+                    <input
+                        type="password"
+                        name="pass"
+                        id="pass"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[#!?@$%^&*\-]).{8,}"
+                        required>
                 </li>
                 <li>
                     <label for="confirmpass">CONFIRM PASSWORD</label>
